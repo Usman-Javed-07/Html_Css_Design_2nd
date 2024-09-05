@@ -1,5 +1,5 @@
 :root {
-    --color-primary : #8c3033;
+    --color-primary : #e84e0f;
     --color-secondary : #0e1f4e;
 }
 *,
@@ -25,7 +25,7 @@ h1 {
     font-size: 7rem;
 }
 h2 {
-    font-size: 4rem;
+    font-size: 8rem;
 }
 @media screen and (min-width: 1024px) {
     body {
@@ -82,4 +82,115 @@ a {
         opacity: 1;
 
     }
+}
+
+.collapsible__header {
+    display: flex;
+    justify-content: space-between;
+}
+.collapsible__content {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: all 0.3s;
+}
+.collapsible--expanded .collapsible__content {
+    max-height: 100vh;
+    opacity: 1;
+}
+
+/* hero section */
+.hero__section {
+    background: url(../images/heroImage.jpg);
+    height: 100vh;
+    background-size: cover;
+
+   
+}
+.hero {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-transform: uppercase;
+}
+.heading {
+text-align: center;
+    color: white;    font-size: 6.5rem;
+    font-weight: 600;
+    margin-top: 0;
+    text-shadow:2px 2px #130303;
+}
+.btn {
+    display: block;
+    background: var(--color-primary);
+    border: none;
+    padding: 20px 60px;
+    border-radius: 10px;
+    color:white ;
+    cursor: pointer;
+    font-size: 3rem;
+    font-weight: 500;
+    box-shadow: 5px 10px 20px #292724f0;
+}
+.btn-hero {
+    margin: 30px auto ;
+}
+.btn:hover {
+   background-color: #f44601;
+}
+@media screen and (max-width : 600px) {
+    .btn {
+        padding: 20px 5px;
+    }
+}
+
+/* about us */
+.about__us {
+    display: grid;
+    text-align: center;
+    margin: 4rem 0 0 0;
+}
+.about__img img{
+    width: 80%;  
+
+}
+.about__informaiton h2 {
+    color: var(--color-primary);
+    font-size: 3.1rem;
+    text-align: center;
+}
+.about__informaiton p {
+    margin: 50px;
+    font-size: 2rem;
+}
+.about_btn {
+    width: 300px;
+    height: 70px;   
+    margin: 0 auto;
+}
+@media screen and (min-width: 768px) {
+    .about__us {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+}
+
+/* products */
+.products {
+    color: var(--color-primary);
+}
+.product__services {
+    font-size: 2.5rem;
+  font-weight: 200;
+  text-transform: capitalize;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.love__product{
+    font-size: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
