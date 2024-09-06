@@ -189,28 +189,38 @@ text-align: center;
   align-items: center;
 }
 .love__product{
-    font-size: 4rem;
+    font-size: 3rem;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
-/* services product */
-.products__section {
-    display: grid;
-    gap: 20px;
+/* products  */
+.product__container {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 5rem;
+    justify-content: center;
+}
+.container__items {
+    display: flex;
+    width: 500px;
+    height: 200px;
+    gap: 30px;
 }
 .product__image img {
-   width: 100px;
+    width: 100px;
    height: 100px;
    object-fit: cover;
-   margin-top: 6rem;
+   margin-top: 3rem;
 }
-.product-heading {
+.product__heading {
     font-size: 2rem;
     flex-direction: row;
 }
-.product-paragraph {
-    text-align: left;
+.product__paragraph {
     font-size: 1.8rem;
+    color: rgb(78, 78, 78);
 }
