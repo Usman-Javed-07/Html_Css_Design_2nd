@@ -224,3 +224,23 @@ text-align: center;
     font-size: 1.8rem;
     color: rgb(78, 78, 78);
 }
+.contact__us {
+    text-align: center;
+    background: var(--color-secondary);
+    margin: 0 auto;
+    height: 150px;
+    margin-top: 10px;
+    width: 500px;
+}
+.contact_heading {
+    font-size: 3rem;
+    font-weight: 500;
+    margin: 0;
+    color: #fff;
+}
+.contact__link a {
+    color: var(--color-primary);
+}
+.contact__link a:hover {
+    color: #ff0000;
+}
