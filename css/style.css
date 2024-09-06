@@ -194,3 +194,23 @@ text-align: center;
     justify-content: center;
     align-items: center;
 }
+
+/* services product */
+.products__section {
+    display: grid;
+    gap: 20px;
+}
+.product__image img {
+   width: 100px;
+   height: 100px;
+   object-fit: cover;
+   margin-top: 6rem;
+}
+.product-heading {
+    font-size: 2rem;
+    flex-direction: row;
+}
+.product-paragraph {
+    text-align: left;
+    font-size: 1.8rem;
+}
