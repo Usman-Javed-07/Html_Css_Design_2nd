@@ -419,6 +419,41 @@ h1.client__heading {
   .slick-arrow.slick-hidden {
       display: none;
   }
+/* testimonials */
+  /* form */
+  form {
+    padding-left: 20px;
+    width: 100%;
+    
+  }
+  .form__heading {
+    font-size: 3rem;
+    color: #8d2b04;
+  }
   label {
     display: block;
+    color: #e84e0f;
+  }
+  input {
+    width: 100%;
+    border-radius: 5px;
+    height: 40px;
+    padding: 30px;
+    background: #eff2f5;
+    border: none;
+  }
+  /* .testimonials {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 80px;
+    margin-top: 15rem;
+    justify-content: center; 
+   }  */
+
+  @media screen and (max-width : 768px) {
+    input {
+        width: 90%;
+    }
   }
