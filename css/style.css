@@ -235,12 +235,51 @@ text-align: center;
 .contact_heading {
     font-size: 3rem;
     font-weight: 500;
-    margin: 0;
+    /* margin:0; */
     color: #fff;
+}
+h4 {
+    margin: 0;
 }
 .contact__link a {
     color: var(--color-primary);
 }
 .contact__link a:hover {
     color: #ff0000;
+}
+.features {
+    background: var(--color-secondary);
+    /* height: 550px; */
+}
+.features__content {
+    color: #fff;
+}
+.features__heading {
+    font-size: 4rem;
+    text-align: center;
+}
+.features__paragraph {
+    font-weight: 400;
+    text-align: center;
+    font-size: 2rem;
+    margin: 0;
+}
+.dollar {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 80px;
+    margin-top: 15rem;
+    justify-content: center;
+    /* background: var(--color-secondary); */
+    
+}
+.dollar img {
+    height: 100px;
+    width: 100px;
+}
+.card_paragraph {
+    color: white;
+    
 }
