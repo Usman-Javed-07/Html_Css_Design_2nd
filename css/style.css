@@ -423,7 +423,7 @@ h1.client__heading {
   /* form */
   form {
     padding-left: 20px;
-    width: 100%;
+    margin-bottom: 40px;
     
   }
   .form__heading {
@@ -435,25 +435,42 @@ h1.client__heading {
     color: #e84e0f;
   }
   input {
-    width: 100%;
+    width: 90%;
     border-radius: 5px;
     height: 40px;
     padding: 30px;
     background: #eff2f5;
     border: none;
   }
-  /* .testimonials {
-    display: flex;
-    width: 100%;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 80px;
-    margin-top: 15rem;
-    justify-content: center; 
-   }  */
-
-  @media screen and (max-width : 768px) {
-    input {
-        width: 90%;
-    }
+  .testimonials__information {
+    background: var(--color-secondary);
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 20px #000;
   }
+  .testimonial__heading {
+    font-size: 4rem;
+  }
+  .testimonials-name {
+    color: var(--color-primary);
+    font-weight: 300;
+  }
+  .testimonials {
+    display: grid;
+    margin: 4rem 0 0 0;
+   } 
+     
+  @media screen and (min-width: 768px) {
+    .testimonials {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+}
+@media screen and (max-width:768px) {
+    .testimonial__button {
+        width: 80%;
+        margin: 0 auto;
+    }
+}
