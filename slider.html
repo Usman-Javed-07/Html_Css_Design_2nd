@@ -1,0 +1,78 @@
+<section>
+  <div class="our__client">
+    <p class="client__paragraph">Our Client & Partners</p>
+    <h1 class="client__heading">We Work With Several Partners</h1>
+  </div>
+</section>
+
+<section>
+  <script
+    src="https://code.jquery.com/jquery-2.2.0.min.js"
+    type="text/javascript"
+  ></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <link
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+
+  <div class="container">
+    <section class="customer-logos slider">
+      <div class="slide">
+        <img src="images/lg1.png" />
+      </div>
+      <div class="slide">
+        <img src="images/lg3.png" />
+      </div>
+      <div class="slide">
+        <img src="images/lg4.png" />
+      </div>
+      <div class="slide">
+        <img src="images/lg5.png" />
+      </div>
+      <div class="slide">
+        <img
+          src="https://image.freepik.com/free-vector/abstract-cross-logo_23-2147536124.jpg"
+        />
+      </div>
+      <div class="slide">
+        <img
+          src="https://image.freepik.com/free-vector/football-logo-background_1195-244.jpg"
+        />
+      </div>
+      <div class="slide">
+        <img
+          src="https://image.freepik.com/free-vector/background-of-spots-halftone_1035-3847.jpg"
+        />
+      </div>
+    </section>
+  </div>
+</section>
+<script>
+  $(document).ready(function () {
+    $(".customer-logos").slick({
+      slidesToShow: 6,
+      slidesToScroll: 1,
+      autoplay: true,
+      autoplaySpeed: 1500,
+      arrows: false,
+      dots: false,
+      pauseOnHover: false,
+      responsive: [
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 4,
+          },
+        },
+        {
+          breakpoint: 520,
+          settings: {
+            slidesToShow: 3,
+          },
+        },
+      ],
+    });
+  });
+</script>
