@@ -421,11 +421,16 @@ h1.client__heading {
   }
 /* testimonials */
   /* form */
+
   form {
     padding-left: 20px;
     margin-bottom: 40px;
     
   }
+  .testimonials {
+    display: grid;
+    margin: 4rem 0 0 0;
+   } 
   .form__heading {
     font-size: 3rem;
     color: #8d2b04;
@@ -436,11 +441,17 @@ h1.client__heading {
   }
   input {
     width: 90%;
-    border-radius: 5px;
+    border-radius: 30px;
     height: 40px;
     padding: 30px;
     background: #eff2f5;
-    border: none;
+    border: 1px solid var(--color-primary);
+    border-color: #eff2f5;
+  }
+  input[type="text"]:focus,
+  input[type="email"]:focus{
+    border-color: #e84e0f;
+    outline: 0;
   }
   .testimonials__information {
     background: var(--color-secondary);
@@ -457,10 +468,7 @@ h1.client__heading {
     color: var(--color-primary);
     font-weight: 300;
   }
-  .testimonials {
-    display: grid;
-    margin: 4rem 0 0 0;
-   } 
+  
      
   @media screen and (min-width: 768px) {
     .testimonials {
@@ -472,5 +480,20 @@ h1.client__heading {
     .testimonial__button {
         width: 80%;
         margin: 0 auto;
+    }
+}
+
+/* footer */
+
+.footer {
+    background: var(--color-secondary);
+    display: grid;
+}
+.footer-content {
+    color: #fff;
+}
+@media screen and (min-width:768px) {
+    .footer {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
