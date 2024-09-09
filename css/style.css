@@ -44,7 +44,7 @@ h2 {
     color:#918ca4 ;
 }
 
-
+/* navbar */
 
 .nav{
     background: #fff;
@@ -78,21 +78,7 @@ h2 {
 .nav__brand {
     transform: translateY(5px);
 }
-@media screen and (min-width:768px) {
-    .fa-solid  {
-        display: none;
-    }
-    .nav__list {
-        width: auto;
-        display: flex;
-        font-size: 1.6rem;
-        max-height: 100%;
-        opacity: 1;
-    }
-    .nav__item{
-        border: 0;
-    }
-}
+
 .collapsible__header {
     display: flex;
     justify-content: space-between;
@@ -563,4 +549,24 @@ button.footer-btn.btn {
         width: 200px;
     }
 
+}
+
+
+
+/* nav */
+
+@media screen and (min-width:768px) {
+    .fa-solid  {
+        display: none;
+    }
+    .nav__list {
+        width: auto;
+        display: flex;
+        font-size: 1.6rem;
+        max-height: 100%;
+        opacity: 1;
+    }
+    .nav__item{
+        border: 0;
+    }
 }
