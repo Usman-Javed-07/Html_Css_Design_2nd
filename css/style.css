@@ -53,7 +53,6 @@ h2 {
     flex-wrap: wrap;
     padding: 0 1rem;
     align-items: center;
-    /* position: fixed; */
 }
 .nav__list {
     width: 100%;
@@ -95,18 +94,20 @@ h2 {
     max-height: 100vh;
     opacity: 1;
 }
-@media screen and (max-width: 848px) {
+@media screen and (max-width: 880px) {
     .nav {
         position: fixed;
+        width: 100%;
+        padding: 0 2rem;
+        margin-bottom: 0;
     }
+   
 }
 /* hero section */
 .hero__section {
     background: url(../images/heroImage.jpg);
     height: 100vh;
-    background-size: cover;
-
-   
+    background-size: cover;   
 }
 .hero {
     height: 100vh;
@@ -176,8 +177,6 @@ text-align: center;
     font-size: 2rem;
 }
 .about_btn {
-    width: 300px;
-    height: 70px;   
     margin: 0 auto;
     display: flex;
     justify-content: center;
@@ -543,7 +542,8 @@ h1.client__heading {
     width: 400px;
 }
 .footer-btn {
-    /* margin: 0 auto; */
+    margin: 0 auto;
+    margin-bottom: 10px;
 }
 .footer-heading {
     text-align: center;
@@ -564,11 +564,9 @@ h1.client__heading {
     .footer-paragraph {
         text-align: center;
     }
-    .footer-btn {
-        /* width: 50%; */
-    }
     .footer-image {
         text-align: center;
+        margin-top: 5px;
       }
 }
 @media screen and (max-width:430px) {
